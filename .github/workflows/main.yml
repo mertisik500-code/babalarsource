@@ -13,3 +13,11 @@ jobs:
 
       - name: Build
         run: msbuild internal.sln /p:Configuration=Release /p:Platform=x64
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-output
+          path: |
+            **/*.exe
+            **/*.dll
