@@ -20,4 +20,3 @@ jobs:
           name: build-output
           path: |
             **/*.exe
-            **/*.dll
